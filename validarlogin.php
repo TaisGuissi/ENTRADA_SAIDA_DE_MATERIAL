@@ -7,8 +7,8 @@ if(isset($_POST['submit'])&& !empty($_POST['email_adm'])&& !empty($_POST['senha_
     include_once "database.php";
     include_once "header.php";
     
-    $student_email = $_POST["email_adm"];
-    $student_senha = $_POST["senha_adm"];
+    $email_adm = $_POST["email_adm"];
+    $senha_adm = $_POST["senha_adm"];
 
     $sql = "SELECT * FROM ads_taisgs_login WHERE email_adm = '$email_adm' and senha_adm = '$senha_adm'";
     $result = $conexao->query($sql);

@@ -7,8 +7,6 @@ unset($_SESSION['senha_adm']);
 
 header('location: login.php' ); 
 
-
-
 ?>
 
 

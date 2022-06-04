@@ -19,7 +19,7 @@ $logado = $_SESSION['email_adm'];
 
 <?php
 
-<br>
+
 echo"Bem vindo: $logado";
 
 ?>
