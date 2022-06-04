@@ -11,7 +11,7 @@ $senha_adm = $_POST["senha_adm"];
 
 //STRING SQL
 $sql = "INSERT INTO ads_taisgs_login(email_adm,senha_adm)
-VALUES ('$email_adm','$senha_adm')";
+VALUES ('$email_adm', '$senha_adm')";
 
 if(mysqli_query($conexao,$sql)){
 

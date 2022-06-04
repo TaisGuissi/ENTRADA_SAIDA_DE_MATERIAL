@@ -1,12 +1,15 @@
+
+
+
 <?php require_once "header.php"?>
 
-<h1>Sistema de Gerenciamento de Escolar</h1>
+<h1>Controle De Entrada de Matéria Prima</h1>
 
 
 <fieldset>
 
 <!-- FORMUÁRIO DE CADASTRO DE ALUNOS -->
-<form action="entrada.php" method="POST">
+<form action="cadastroentrada.php" method="POST">
 
     <div class="form-row">
     
@@ -17,7 +20,7 @@
     <label for="data_entrada">Data: </label>
     <input type="text" name="data_entrada" id="data_entrada"><br><br>
 
-    <label for="student_email">Hora:</label>
+    <label for="hora_entrada">Hora:</label>
     <input type="hora_entrada" name="hora_entrada" id="hora_entrada"><br><br>
 
     <label for="hora_saida">Saída:</label>
@@ -42,7 +45,7 @@
 
 
 
-    <input type="submit" value="Cadastrar Aluno">
+    <input type="submit" value="INCLUIR">
 
 
 </form>
