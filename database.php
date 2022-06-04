@@ -19,10 +19,21 @@ $conexao = mysqli_connect(SERVER_LOCAL,SERVER_USER,SERVER_PASSWORD,DATABASE_NAME
 
 
 TABELA LOGIN:   ads_taisgs_login
-
+id
 email_adm 
 senha_adm
 
+TABELA ENTRADA MP:   ads_taisgs_entrada_mp
+
+id_entrada
+data_entrada
+hora_entrada
+hora_saida
+cod_prod
+desc_prod
+unidade_prod
+qtd_prod
+nf_prod
 
 
 

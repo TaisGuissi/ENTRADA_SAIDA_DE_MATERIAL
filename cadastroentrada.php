@@ -17,8 +17,8 @@ $nf_prod = $_POST["nf_prod"];
 
 
 //STRING SQL
-$sql = "INSERT INTO ads_taisgs_login(data_entrada,hora_entrada,hora_saida,cod_prod,desc_prod,unidade_prod,qtd_prod,nf_prod)
-VALUES ('$data_entrada','$hora_entrada',$hora_saida,$cod_prod,$desc_prod,)";
+$sql = "INSERT INTO ads_taisgs_entrada_mp(data_entrada,hora_entrada,hora_saida,cod_prod,desc_prod,unidade_prod,qtd_prod,nf_prod)
+VALUES ('$data_entrada','$hora_entrada','$hora_saida','$cod_prod','$desc_prod','$unidade_prod','$qtd_prod','$nf_prod')";
 
 if(mysqli_query($conexao,$sql)){
 
