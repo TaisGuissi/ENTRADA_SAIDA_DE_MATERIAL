@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>Controle de Entrada e Saída de MP</title>
+    <title>Sistema de Gerenciamento Escolar</title>
 </head>
 
 <body>
@@ -28,12 +28,9 @@
     <header>
         <nav>
             <ul>
-                <li> <a href="index.php"> HOME </a> </li>
-                <li> <a href="formcadastrologin.php"> CADASTRAR LOGIN </a> </li>
-                <li> <a href="listar_entrada.php"> LISTAR </a> </li></li>
-                <li> <a href="login.php"> LOGIN </a> </li></li>
+                <li> <a href="formentrada.php"> INCLUIR </a> </li>
+                <li> <a href="listar_entrada.php"> ENTRADA </a> </li></li>
                 
-                <li> <a href="contato.php"> CONTATO </a> </li>
             </ul>
         </nav>
     </header>

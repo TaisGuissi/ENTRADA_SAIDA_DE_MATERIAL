@@ -1,7 +1,8 @@
 
 
 
-<?php require_once "header.php"?>
+<?php include "es_logado.php";?>
+<?php include "logadosucesso.php";?>
 
 <h1>Controle De Entrada de Matéria Prima</h1>
 

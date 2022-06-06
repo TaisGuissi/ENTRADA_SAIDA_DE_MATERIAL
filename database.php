@@ -34,9 +34,17 @@ desc_prod
 unidade_prod
 qtd_prod
 nf_prod
+motorista
 
+TABELA ENTRADA MP:   ads_taisgs_saida_mp
 
-
+id_saida
+data_saida
+hora_chegou
+hora_saida
+cliente_saida
+nf_cliente
+motorista_saida
 
 
 

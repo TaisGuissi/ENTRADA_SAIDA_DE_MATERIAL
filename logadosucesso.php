@@ -1,5 +1,5 @@
 <?php
-include_once "header.php";
+include_once "es_logado.php";
 session_start();
 
 
@@ -20,6 +20,6 @@ $logado = $_SESSION['email_adm'];
 <?php
 
 
-echo"Bem vindo: $logado";
+echo"Usuário: $logado";
 
 ?>

@@ -1,11 +1,14 @@
 <?php 
-include "header.php";
+include "es_logado.php";
 include "database.php";
+include "logadosucesso.php";
 
 
 
 
-$sql = "SELECT * FROM sge_students";
+
+
+$sql = "SELECT * FROM ads_taisgs_entrada_mp";
 
 $resultado = mysqli_query($conexao, $sql );
 
@@ -23,9 +26,14 @@ $resultado = mysqli_query($conexao, $sql );
 
 <thead>
     <tr>
-            <th>Nome  </th> 
-            <th>E-mail </th>
-            <th>Senha </th>
+            <th>Data</th> 
+            <th>Entrada </th>
+            <th>Saída </th>
+            <td>Código</td>
+            <td>Descrição</td>
+            <td>Unidade</td>
+            <td>Quantidade</td>
+            <td>Nota Fiscal</td>
             <td>Editar</td>
             <td>Excluir</td>
     </tr> 
@@ -36,11 +44,19 @@ $resultado = mysqli_query($conexao, $sql );
     <?php while($dados = mysqli_fetch_array($resultado)) {?>
 
     <tr>
-            <td><?php echo $dados['student_name'] ?></td>
-            <td><?php echo $dados['student_email']?></td>
-            <td><?php echo $dados['student_senha']?></td>
-            <td><a href="formatualizaalunos.php?id=<?php echo $dados['id']?>">Editar</a> </td>
-            <td><a href="delete_alunos.php?id=<?php echo $dados['id']?>">excluir</a> </td>
+            <td><?php echo $dados['data_entrada'] ?></td>
+            <td><?php echo $dados['hora_entrada']?></td>
+            <td><?php echo $dados['hora_saida']?></td>
+            <td><?php echo $dados['cod_prod']?></td>
+            <td><?php echo $dados['desc_prod']?></td>
+            <td><?php echo $dados['unidade_prod']?></td>
+            <td><?php echo $dados['qtd_prod']?></td>
+            <td><?php echo $dados['nf_prod']?></td>
+
+
+
+            <td><a href="formatualiza_entrada.php?id_entrada=<?php echo $dados['id_entrada']?>">Editar</a> </td>
+            <td><a href="excluir_entrada.php?id_entrada=<?php echo $dados['id_entrada']?>">excluir</a> </td>
            
     </tr>
     
