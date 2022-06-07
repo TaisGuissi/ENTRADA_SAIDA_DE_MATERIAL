@@ -21,7 +21,7 @@
     <label for="data_entrada">Data: </label>
     <input type="text" name="data_entrada" id="data_entrada"><br><br>
 
-    <label for="hora_entrada">Hora:</label>
+    <label for="hora_entrada">Entrada:</label>
     <input type="hora_entrada" name="hora_entrada" id="hora_entrada"><br><br>
 
     <label for="hora_saida">Saída:</label>

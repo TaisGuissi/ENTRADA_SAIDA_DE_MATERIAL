@@ -10,7 +10,7 @@
 <fieldset>
 
 <!-- FORMUÁRIO DE CADASTRO DE ALUNOS -->
-<form action="cadastroentrada.php" method="POST">
+<form action="cadastrosaida.php" method="POST">
 
     <div class="form-row">
     
@@ -21,7 +21,7 @@
     <label for="data_saida">Data: </label>
     <input type="text" name="data_saida" id="data_saida"><br><br>
 
-    <label for="hora_chegou">Hora:</label>
+    <label for="hora_chegou">Entrada:</label>
     <input type="hora_chegou" name="hora_chegou" id="hora_chegou"><br><br>
 
     <label for="hora_saida">Saída:</label>

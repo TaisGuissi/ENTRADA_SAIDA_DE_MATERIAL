@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+<!--
 <script>
     var search = document.getElementById('pesquisar');
 
@@ -24,12 +24,14 @@
     }
 
     </script>
+-->
 
     <header>
         <nav>
             <ul>
-                <li> <a href="formentrada.php"> INCLUIR </a> </li>
-                <li> <a href="listar_entrada.php"> ENTRADA </a> </li></li>
+              
+                <li> <a href="listar_entrada.php"> ENTRADA DE MATÉRIA PRIMA </a> </li></li>
+                <li> <a href="listar_saida.php"> SAÍDA FATURAMENTO </a> </li></li>
                 
             </ul>
         </nav>
