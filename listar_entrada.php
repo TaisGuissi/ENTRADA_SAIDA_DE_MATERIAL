@@ -1,12 +1,7 @@
 <?php 
-include "es_logado.php";
+
 include "database.php";
 include "logadosucesso.php";
-
-
-
-
-
 
 $sql = "SELECT * FROM ads_taisgs_entrada_mp";
 
@@ -37,6 +32,7 @@ $resultado = mysqli_query($conexao, $sql );
             <td>Nota Fiscal</td>
             <td>Editar</td>
             <td>Excluir</td>
+            
     </tr> 
 </thead>
 
@@ -56,14 +52,20 @@ $resultado = mysqli_query($conexao, $sql );
 
 
 
-            <td><a href="formatualiza_entrada.php?id_entrada=<?php echo $dados['id_entrada']?>">Editar</a> </td>
-            <td><a href="excluir_entrada.php?id_entrada=<?php echo $dados['id_entrada']?>">excluir</a> </td>
+            <td><a href="formatualiza_entrada.php?id_entrada=<?php echo $dados['id_entrada']?>">EDITAR</a> </td>
+            <td><a href="excluir_entrada.php?id_entrada=<?php echo $dados['id_entrada']?>">EXCLUIR</a> </td>
            
-    </tr>
+    </tr> 
     
-
+    
     <?php } ?>
     </tbody> 
-  
+
+   
 </table>
+
+<br><br>
+<a href="formentrada.php">INCLUIR</a>
+
+
 

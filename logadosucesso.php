@@ -1,5 +1,6 @@
 <?php
-include_once "es_logado.php";
+
+
 session_start();
 
 
@@ -13,9 +14,21 @@ $logado = $_SESSION['email_adm'];
 
 ?> 
 
-<div class="d-flex">
+<nav>
+            <ul>
+                
+                   
+             <li> <a href="listar_entrada.php"> ENTRADA DE MATÉRIA PRIMA </a> </li></li>
+                <li> <a href="listar_saida.php"> SAÍDA FATURAMENTO </a> </li></li>
+                <li> <a href="sair.php"class="btn btn-danger me-5"> SAIR </a> </li>
+            </ul>
+        </nav>
+
+<!--<div class="d-flex">
 <a href="sair.php" class="btn btn-danger me-5">Sair</a>
 </div>
+
+-->
 
 <?php
 

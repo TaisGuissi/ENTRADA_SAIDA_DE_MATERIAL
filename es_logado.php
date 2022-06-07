@@ -9,6 +9,7 @@
     <title>Sistema de Gerenciamento Escolar</title>
 </head>
 
+
 <body>
 <!--
 <script>
@@ -24,7 +25,7 @@
     }
 
     </script>
--->
+
 
     <header>
         <nav>
@@ -32,8 +33,10 @@
               
                 <li> <a href="listar_entrada.php"> ENTRADA DE MATÉRIA PRIMA </a> </li></li>
                 <li> <a href="listar_saida.php"> SAÍDA FATURAMENTO </a> </li></li>
+                <li> <a href="sair.php">SAIR </a> </li></li>
+              
                 
             </ul>
         </nav>
     </header>
-
+-->

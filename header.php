@@ -32,7 +32,6 @@
                 <li> <a href="formcadastrologin.php"> CADASTRAR LOGIN </a> </li>
                 <li> <a href="listar_entrada.php"> LISTAR </a> </li></li>
                 <li> <a href="login.php"> LOGIN </a> </li></li>
-                
                 <li> <a href="contato.php"> CONTATO </a> </li>
             </ul>
         </nav>
