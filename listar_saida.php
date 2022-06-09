@@ -63,4 +63,6 @@ $resultado = mysqli_query($conexao, $sql );
     </tbody> 
   
 </table>
+<br><br>
 
+<a href="formsaida.php">INCLUIR</a>

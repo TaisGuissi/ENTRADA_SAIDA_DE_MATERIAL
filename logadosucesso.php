@@ -15,9 +15,7 @@ $logado = $_SESSION['email_adm'];
 ?> 
 
 <nav>
-            <ul>
-                
-                   
+            <ul>                 
              <li> <a href="listar_entrada.php"> ENTRADA DE MATÉRIA PRIMA </a> </li></li>
                 <li> <a href="listar_saida.php"> SAÍDA FATURAMENTO </a> </li></li>
                 <li> <a href="sair.php"class="btn btn-danger me-5"> SAIR </a> </li>

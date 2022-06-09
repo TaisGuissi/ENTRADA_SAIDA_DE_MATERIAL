@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>Controle de Entrada e Saída de MP</title>
+    <title>CONTROLE DE ENTRADA E SAÍDA DE MATERIAL</title>
 </head>
 
 <body>

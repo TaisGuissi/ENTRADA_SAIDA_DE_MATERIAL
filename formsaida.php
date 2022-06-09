@@ -4,7 +4,7 @@
 <?php include "es_logado.php";?>
 <?php include "logadosucesso.php";?>
 
-<h1>Controle De Entrada de Matéria Prima</h1>
+<h1>CONTROLE DE ENTRADA E SAÍDA DE  MATERIAL</h1>
 
 
 <fieldset>
