@@ -1,3 +1,8 @@
+<?php 
+
+include "logadosucesso.php";
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,16 +16,37 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/tabelas.css">
-<link rel="stylesheet" href="javascripts/tabelas.js">
+
+<!-- MEU CSS  -->
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+<link rel="stylesheet" href="css/bootstrap-grid.css.map">
+<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="css/bootstrap-grid.css.map">
+<link rel="stylesheet" href="css/bootstrap-reboot.css">
+<link rel="stylesheet" href="css/bootstrap-reboot.css.map">
+<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="css/bootstrap-reboot.min.css.map">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap.css.map">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css.map">
+
+<link rel="" href="js/bootstrap.bundle.js">
+<link rel="" href="js/bootstrap.bundle.js.map">
+<link rel="" href="js/bootstrap.bundle.min.js">
+<link rel="" href="js/bootstrap.bundle.min.js.map">
+<link rel="" href="js/bootstrap.js">
+<link rel="" href="js/bootstrap.js.map">
+<link rel="" href="js/bootstrap.min.js">
+<link rel="" href="js/bootstrap.min.js.map">
+
 </head>
 
 
-
 <?php 
-
 include "database.php";
-include "logadosucesso.php";
+
 
 $sql = "SELECT * FROM ads_taisgs_entrada_mp";
 
@@ -37,26 +63,37 @@ $resultado = mysqli_query($conexao, $sql );
 -->
 <br><br>
 
-<table border="2">
+<div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><b>ENTRADA DE MATÉRIA PRIMA</b></div>
+                    <div class="col-sm-4">
+                    <a href="formentrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button></a>
+                    </div>
+                </div>
+            </div>
+
+<table class="table table-bordered">
 
 <thead>
     <tr>
             <th>Data</th> 
             <th>Entrada </th>
             <th>Saída </th>
-            <td>Código</td>
-            <td>Descrição</td>
-            <td>Unidade</td>
-            <td>Quantidade</td>
-            <td>Nota Fiscal</td>
-            <td>Editar</td>
-            <td>Excluir</td>
-            
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Unidade</th>
+            <th>Quantidade</th>
+            <th>Nota Fiscal</th>
+            <th>Editar</th>
+            <th>Excluir</th>
     </tr> 
 </thead>
 
     <tbody>
-
+    <a href="formentrada.php" class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            
     <?php while($dados = mysqli_fetch_array($resultado)) {?>
 
     <tr>
@@ -71,20 +108,15 @@ $resultado = mysqli_query($conexao, $sql );
 
 
 
-            <td><a href="formatualiza_entrada.php?id_entrada=<?php echo $dados['id_entrada']?>">EDITAR</a> </td>
-            <td><a href="excluir_entrada.php?id_entrada=<?php echo $dados['id_entrada']?>">EXCLUIR</a> </td>
-           
+            <td><a href="formatualiza_entrada.php?id_entrada=<?php echo $dados['id_entrada']?>">Editar</a> </td>
+            <td><a href="excluir_entrada.php?id_entrada=<?php echo $dados['id_entrada']?>">excluir</a> </td>
+                      
     </tr> 
-    
     
     <?php } ?>
     </tbody> 
 
    
 </table>
-
-<br><br>
-<a href="formentrada.php">INCLUIR</a>
-
 
 
