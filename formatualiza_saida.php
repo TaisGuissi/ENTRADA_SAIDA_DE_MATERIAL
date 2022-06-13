@@ -1,3 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Pt-br" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formes.css">
+
+    <title>Saída de Material</title>
+</head>
+
+
+
 <?php
 include "es_logado.php";
 include_once "database.php";
@@ -16,7 +30,13 @@ $resultado = mysqli_query($conexao, $sql);
 $dados = mysqli_fetch_array($resultado);
 
 ?>
-<h1>Formulário de atualização da dados cadastrais</h1>
+
+<main class="container">  
+
+<div class="input-field">
+<h2>Atualização Saída de Material</h2>
+
+<br> <br>
 <form action="atualiza_saida.php" method="post">
 
 <input type="hidden" name="id_saida" value="<?php echo $dados['id_saida']?>">
@@ -42,6 +62,6 @@ $dados = mysqli_fetch_array($resultado);
 
 <input type="submit" name="update" id="update">
 
-
+</div>
 
 </form>

@@ -69,7 +69,7 @@ $resultado = mysqli_query($conexao, $sql );
                 <div class="row">
                     <div class="col-sm-8"><b>ENTRADA DE MATÉRIA PRIMA</b></div>
                     <div class="col-sm-4">
-                    <a href="formentrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button></a>
+                    <a href="formentrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>INCLUIR</button></a>
                     </div>
                 </div>
             </div>

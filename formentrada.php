@@ -9,6 +9,9 @@
 
 <fieldset>
 
+<main class="container">  
+<div class="input-field">
+
 <!-- FORMUÁRIO DE CADASTRO DE ALUNOS -->
 <form action="cadastroentrada.php" method="POST">
 
@@ -46,6 +49,7 @@
 
     <input type="submit" value="INCLUIR">
 
+    </div>
 
 </form>
 
