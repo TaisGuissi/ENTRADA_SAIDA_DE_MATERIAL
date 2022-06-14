@@ -63,7 +63,7 @@ $dados = mysqli_fetch_array($resultado);
 <input type="text" name="nf_prod" id="nf_prod" value="<?php echo $dados['nf_prod']?>"><br><br>
 
 
-<input type="submit" name="upd  ate" id="update" value="Atualizar">
+<input type="submit" name="update" id="update">
 
 </div>
 
