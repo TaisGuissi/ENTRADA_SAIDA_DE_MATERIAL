@@ -15,6 +15,7 @@ $logado = $_SESSION['email_adm'];
 
 ?> 
 
+
 <nav>
             <ul>                 
              <li> <a href="listar_entrada.php"> ENTRADA DE MATÉRIA PRIMA </a> </li></li>
