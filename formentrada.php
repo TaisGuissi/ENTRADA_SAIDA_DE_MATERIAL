@@ -1,64 +1,66 @@
+<?php include "es_logado.php";?>
+<?php include "logadosucesso.php";?>
+
+<link rel="stylesheet" href="css/formulariocadastro.css">
 
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Pt-br" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/formes.css">
+<!-- FORMUÁRIO DE CADASTRO DE ENTRADAS -->
 
-    <title>Sistema de Gerenciamento Escolar</title>
-</head>
+    <div class="box">
+    <form action="cadastroentrada.php" method="POST">
 
+    <fieldset>
+    <legend>ENTRADA DE material</legend><br><br>
 
+   
+    <input type="date" name="data_entrada" id="data_entrada" required><br><br>
+    <label for="data_entrada"></label>
 
-<main class="container"> 
+    <div class="inputBox">
+    <input type="text" name="hora_entrada" id="hora_entrada" class="inputCadastro" required>
+    <label for="hora_entrada" class="labelInputCadastro">Entrada:</label>
+    </div>
+    <br><br>
 
-<?php include "logadosucesso.php"?>
+    <div class="inputBox">
+    <input type="text" name="hora_saida" id="hora_saida" class="inputCadastro" required>
+    <label for="hora_saida" class="labelInputCadastro">Saída:</label>
+    </div>
+    <br><br>
 
+    <div class="inputBox">
+    <input type="text" name="cod_prod" id="cod_prod" class="inputCadastro" required>
+    <label for="cod_prod" class="labelInputCadastro">Código:</label>
+    </div>
+    <br><br>
 
-<h1>Entrada de Matéria Prima</h1>
-<br><br>
- 
-<div class="input-field">
+    <div class="inputBox">
+    <input type="text" name="desc_prod" id="desc_prod" class="inputCadastro" required>
+    <label for="desc_prod" class="labelInputCadastro">Descrição:</label>
+    </div>
+    <br><br>
 
-<!-- FORMUÁRIO DE CADASTRO DE ALUNOS -->
-<form action="cadastroentrada.php" method="POST">
+    <div class="inputBox">
+    <input type="text" name="unidade_prod" id="unidade_prod" class="inputCadastro" required>
+    <label for="unidade_prod" class="labelInputCadastro">Unidade:</label>
+    </div>
+    <br><br>
 
-    <label for="data_entrada">Data: </label>
-    <input type="text" name="data_entrada" id="data_entrada"><br>
+    <div class="inputBox">
+    <input type="text" name="qtd_prod" id="qtd_prod" class="inputCadastro" required>
+    <label for="qtd_prod"class="labelInputCadastro">Quantidade:</label>
+    </div>
+    <br><br>
 
-    <label for="hora_entrada">Entrada:</label>
-    <input type="hora_entrada" name="hora_entrada" id="hora_entrada"><br>
-
-    <label for="hora_saida">Saída:</label>
-    <input type="text" name="hora_saida" id="hora_saida"><br>
-
-    <label for="cod_prod">Código: </label>
-    <input type="text" name="cod_prod" id="cod_prod"><br>
-
-    <label for="desc_prod">Descrição:</label>
-    <input type="text" name="desc_prod" id="desc_prod"><br>
-
-    <label for="unidade_prod">Unidade:</label>
-    <input type="text" name="unidade_prod" id="unidade_prod"><br>
-
-    <label for="qtd_prod">Quantidade:</label>
-    <input type="text" name="qtd_prod" id="qtd_prod"><br>
-
-    <label for="nf_prod">Nota Fiscal:</label>
-    <input type="text" name="nf_prod" id="nf_prod"><br>
-    
-
-    <input type="submit" value="Cadastrar">
-  
-
+    <div class="inputBox">
+    <input type="text" name="nf_prod" id="nf_prod" class="inputCadastro" required>
+    <label for="nf_prod" class="labelInputCadastro">Nota Fiscal:</label>
+    </div>
+    <br><br>
+    <input type="submit" id="submit" value="Cadastrar">
     </div>
 
 </form>
-
-
 </fieldset>
 
 

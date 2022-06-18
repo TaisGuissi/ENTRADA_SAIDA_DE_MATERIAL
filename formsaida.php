@@ -1,13 +1,11 @@
 
-
-
 <?php include "es_logado.php";?>
 <?php include "logadosucesso.php";?>
 
 <link rel="stylesheet" href="css/formulariocadastro.css">
 
 
-<!-- FORMUÁRIO DE CADASTRO DE ALUNOS -->
+<!-- FORMUÁRIO DE CADASTRO DE SÁIDAS -->
 
 
     <div class="box">
@@ -15,9 +13,7 @@
 
     <fieldset>
     <legend>Saída Cliente</legend><br><br>
-
     
-  
     <input type="date" name="data_saida" id="data_saida" required> <br><br>
     <label for="data_saida"></label>
     <br><br>
@@ -54,10 +50,9 @@
     </div>
     <br><br>
 
-    <input type="submit" id="submit"value="INCLUIR">
+    <input type="submit" id="submit"value="INCLUIR"><br><br>
 
     </div>
 </form>
-
 
 </fieldset>

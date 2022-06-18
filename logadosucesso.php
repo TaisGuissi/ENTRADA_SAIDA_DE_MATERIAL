@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="css/logado.css">
 <?php
 
 
@@ -14,8 +14,7 @@ if((!isset($_SESSION['email_adm']) ==true)and(!isset($_SESSION['senha_adm'])==tr
 $logado = $_SESSION['email_adm'];
 
 ?> 
-
-
+ 
 <nav>
             <ul>                 
              <li> <a href="listar_entrada.php"> ENTRADA DE MATÉRIA PRIMA </a> </li></li>
@@ -24,6 +23,7 @@ $logado = $_SESSION['email_adm'];
             </ul>
         </nav>
 
+  
 <!--<div class="d-flex">
 <a href="sair.php" class="btn btn-danger me-5">Sair</a>
 </div>
