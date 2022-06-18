@@ -1,47 +1,29 @@
-<?php require_once "header.php"?>
+<link rel="stylesheet" href="css/formulariocadastro.css">
+<title>CADASTRAR NOVO USUÁRIO</title>
 
-<h1>Sistema de Gerenciamento de Escolar</h1>
+<!-- FORMUÁRIO DE CADASTRO DE LOGIN -->
 
-
-<fieldset>
-
-<!-- FORMUÁRIO DE CADASTRO DE ALUNOS -->
+<div class="box">
 <form action="cadastrologin.php" method="POST">
 
-    <div class="form-row">
+<fieldset>
+    <legend>FORMULÁRIO DE LOGIN</legend><br><br>
 
-    
+
+    <div class="inputBox">
+    <input type="text" name="email_adm" id="email_adm" class="inputCadastro" required>
+    <label for="email_adm" class="labelInputCadastro">E-mail</label>
     </div>
+    <br><br>
 
-    <legend>Formulário de Login</legend><br><br>
-
-    <label for="email_adm">E-mail</label>
-    <input type="email" name="email_adm" id="email_adm"><br><br>
-
-    <label for="senha_adm">Senha:</label>
-    <input type="password" name="senha_adm" id="senha_adm"><br><br>
-
-    <input type="submit" value="Cadastrar Aluno">
-
+    <div class="inputBox">
+    <input type="password" name="senha_adm" id="senha_adm" class="inputCadastro" required>
+    <label for="senha_adm"class="labelInputCadastro">Senha:</label>
+    </div>
+    <br><br>
+    <input type="submit" id="submit" value="Cadastrar">
+ 
+    </fieldset>
 
 </form>
 
-
-</fieldset>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php require_once "footer.php"?>

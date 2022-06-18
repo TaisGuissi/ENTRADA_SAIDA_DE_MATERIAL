@@ -1,5 +1,4 @@
-<?php include "es_logado.php";?>
-<?php include "logadosucesso.php";?>
+<?php include "loguei.php";?>
 
 <link rel="stylesheet" href="css/formulariocadastro.css">
 
@@ -10,7 +9,7 @@
     <form action="cadastroentrada.php" method="POST">
 
     <fieldset>
-    <legend>ENTRADA DE material</legend><br><br>
+    <legend>ENTRADA DE MATERIAL</legend><br><br>
 
    
     <input type="date" name="data_entrada" id="data_entrada" required><br><br>

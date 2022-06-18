@@ -1,6 +1,4 @@
-
-<?php include "es_logado.php";?>
-<?php include "logadosucesso.php";?>
+<?php include "loguei.php";?>
 
 <link rel="stylesheet" href="css/formulariocadastro.css">
 

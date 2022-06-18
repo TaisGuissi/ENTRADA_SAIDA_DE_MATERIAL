@@ -1,8 +1,9 @@
 <?php 
 
-include "logadosucesso.php";
+include "loguei.php";
 
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,6 +32,8 @@ include "logadosucesso.php";
 <link rel="stylesheet" href="css/bootstrap.css.map">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css.map">
+<link rel="stylesheet" href="css/tbl2.css">
+<link rel="stylesheet" href="css/logado.css">
 
 <link rel="" href="js/bootstrap.bundle.js">
 <link rel="" href="js/bootstrap.bundle.js.map">
@@ -70,11 +73,15 @@ $resultado = mysqli_query($conexao, $sql );
                     <div class="col-sm-8"><b>ENTRADA DE MATÉRIA PRIMA</b></div>
                     <div class="col-sm-4">
                     <a href="formentrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>INCLUIR</button></a>
-                    </div>
+                    <a href="listar_entrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>CONSULTAR ENTRADA</button></a>
+                    <a href="listar_saida.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>CONSULTAR SAÍDAS</button></a>
+
+                </div>
                 </div>
             </div>
 
-<table class="table table-bordered">
+            <table class="table table-bordered table-dark">
+
 
 <thead>
     <tr>
@@ -93,6 +100,7 @@ $resultado = mysqli_query($conexao, $sql );
 
     <tbody>
     <a href="formentrada.php" class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+    
                             
     <?php while($dados = mysqli_fetch_array($resultado)) {?>
 

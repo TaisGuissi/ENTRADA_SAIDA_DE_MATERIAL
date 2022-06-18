@@ -1,5 +1,6 @@
 <?php 
-include "logadosucesso.php";
+
+include "loguei.php";
 
 ?>
 
@@ -31,6 +32,10 @@ include "logadosucesso.php";
 <link rel="stylesheet" href="css/bootstrap.css.map">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css.map">
+<link rel="stylesheet" href="css/tbl2.css">
+<link rel="stylesheet" href="css/logado.css">
+
+
 
 
 
@@ -73,12 +78,17 @@ $resultado = mysqli_query($conexao, $sql );
                 <div class="row">
                     <div class="col-sm-8"><b>SAÍDA DE MATERIAL</b></div>
                     <div class="col-sm-4">
-                    <a href="formsaida.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button></a>
+                    <a href="formentrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>INCLUIR</button></a>
+                    <a href="listar_entrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>CONSULTAR ENTRADA</button></a>
+                    <a href="listar_saida.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>CONSULTAR SAÍDAS</button></a>
+                
                     </div>
                 </div>
             </div>
 
-            <table class="table table-bordered">
+            <table class="table table-bordered table-dark">
+
+
 
 <thead>
     <tr>

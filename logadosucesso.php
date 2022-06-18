@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="css/logado.css">
-<?php
+<link rel="stylesheet" href="css/formulariocadastro.css">
 
+<?php
 
 session_start();
 
@@ -15,24 +15,21 @@ $logado = $_SESSION['email_adm'];
 
 ?> 
  
-<nav>
-            <ul>                 
-             <li> <a href="listar_entrada.php"> ENTRADA DE MATÉRIA PRIMA </a> </li></li>
-                <li> <a href="listar_saida.php"> SAÍDA FATURAMENTO </a> </li></li>
-                <li> <a href="sair.php"class="btn btn-danger me-5"> SAIR </a> </li>
-            </ul>
-        </nav>
-
-  
-<!--<div class="d-flex">
-<a href="sair.php" class="btn btn-danger me-5">Sair</a>
-</div>
-
--->
-
-<?php
 
 
-echo"Usuário: $logado";
 
-?>
+<div class="box">
+
+
+    <fieldset>
+    <legend>Bem-vindo</legend><?php echo"Usuário: $logado"; ?><br><br>
+    <a href='sair.php'> <button>SAIR</button><br><br>
+
+    <a href='listar_entrada.php'> <button> CONSULTAR ENTRADAS</button><br><br>
+    <a href='listar_entrada.php'> <button> CONSULTAR SAÍDAS</button><br><br>
+   
+    </fieldset>
+    </div>
+    <br><br>
+
+    
