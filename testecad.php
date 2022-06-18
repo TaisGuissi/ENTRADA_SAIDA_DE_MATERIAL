@@ -1,9 +1,3 @@
-
-
-
-<?php include "es_logado.php";?>
-<?php include "logadosucesso.php";?>
-
 <link rel="stylesheet" href="css/formulariocadastro.css">
 
 
