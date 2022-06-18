@@ -36,9 +36,6 @@ include "loguei.php";
 <link rel="stylesheet" href="css/logado.css">
 
 
-
-
-
 <link rel="" href="js/bootstrap.bundle.js">
 <link rel="" href="js/bootstrap.bundle.js.map">
 <link rel="" href="js/bootstrap.bundle.min.js">
@@ -49,10 +46,6 @@ include "loguei.php";
 <link rel="" href="js/bootstrap.min.js.map">
 
 </head>
-
-
-
-
 
 <?php 
 include "database.php";
@@ -71,24 +64,24 @@ $resultado = mysqli_query($conexao, $sql );
 </div>
 -->
 
-
 <div class="container">
         <div class="table-wrapper">
             <div class="table-title">
                 <div class="row">
-                    <div class="col-sm-8"><b>SAÍDA DE MATERIAL</b></div>
+                <div class="col-sm-8">
+                    <LEgend><b>ENTRADA DE MATÉRIA PRIMA</b></LEgend></div>
+
                     <div class="col-sm-4">
+                
                     <a href="formentrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>INCLUIR</button></a>
                     <a href="listar_entrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>CONSULTAR ENTRADA</button></a>
                     <a href="listar_saida.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>CONSULTAR SAÍDAS</button></a>
-                
+
                     </div>
                 </div>
             </div>
 
             <table class="table table-bordered table-dark">
-
-
 
 <thead>
     <tr>
@@ -104,8 +97,8 @@ $resultado = mysqli_query($conexao, $sql );
 </thead>
 
     <tbody>
-    <a href="formsaida.php" class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-
+    <br><br>
+    
 
     <?php while($dados = mysqli_fetch_array($resultado)) {?>
 

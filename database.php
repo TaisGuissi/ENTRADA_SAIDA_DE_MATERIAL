@@ -31,7 +31,7 @@ desc_prod
 unidade_prod
 qtd_prod
 nf_prod
-motorista
+motorista ----- no
 
 TABELA ENTRADA MP:   ads_taisgs_saida_mp
 

@@ -1,5 +1,4 @@
 
-
 <?php
 
 session_start();
@@ -15,4 +14,7 @@ $logado = $_SESSION['email_adm'];
 
 echo"Usuário: $logado";
 
+
 ?> 
+
+

@@ -70,7 +70,9 @@ $resultado = mysqli_query($conexao, $sql );
         <div class="table-wrapper">
             <div class="table-title">
                 <div class="row">
-                    <div class="col-sm-8"><b>ENTRADA DE MATÉRIA PRIMA</b></div>
+                <div class="col-sm-8">
+                    <LEgend><b>ENTRADA DE MATÉRIA PRIMA</b></LEgend></div>
+
                     <div class="col-sm-4">
                     <a href="formentrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>INCLUIR</button></a>
                     <a href="listar_entrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>CONSULTAR ENTRADA</button></a>
@@ -81,8 +83,6 @@ $resultado = mysqli_query($conexao, $sql );
             </div>
 
             <table class="table table-bordered table-dark">
-
-
 <thead>
     <tr>
             <th>Data</th> 
@@ -99,9 +99,8 @@ $resultado = mysqli_query($conexao, $sql );
 </thead>
 
     <tbody>
-    <a href="formentrada.php" class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+    <br><br>    
     
-                            
     <?php while($dados = mysqli_fetch_array($resultado)) {?>
 
     <tr>
