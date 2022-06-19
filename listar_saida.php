@@ -73,7 +73,7 @@ $resultado = mysqli_query($conexao, $sql );
 
                     <div class="col-sm-4">
                 
-                    <a href="formentrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>INCLUIR</button></a>
+                    <a href="formsaida.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>INCLUIR</button></a>
                     <a href="listar_entrada.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>CONSULTAR ENTRADA</button></a>
                     <a href="listar_saida.php">  <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>CONSULTAR SAÍDAS</button></a>
 

@@ -12,6 +12,9 @@ $conexao = mysqli_connect(SERVER_LOCAL,SERVER_USER,SERVER_PASSWORD,DATABASE_NAME
 
 
 /*
+AlunosCMC2022!!
+http://gatossaurosstudio.com.br/ads/tais_guissi/
+
 define("SERVER_LOCAL","localhost");
 define("SERVER_USER","root");
 define("SERVER_PASSWORD","");
