@@ -10,7 +10,7 @@ include "loguei.php";
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Table with Add and Delete Row Feature</title>
+<title>Entrada de Material</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -51,7 +51,7 @@ include "loguei.php";
 include "database.php";
 
 
-$sql = "SELECT * FROM ads_taisgs_entrada_mp";
+$sql = "SELECT * FROM ads_taisgs_entrada_mp ORDER BY data_entrada DESC";
 
 $resultado = mysqli_query($conexao, $sql );
 

@@ -36,6 +36,7 @@ include "loguei.php";
 <link rel="stylesheet" href="css/logado.css">
 
 
+
 <link rel="" href="js/bootstrap.bundle.js">
 <link rel="" href="js/bootstrap.bundle.js.map">
 <link rel="" href="js/bootstrap.bundle.min.js">
@@ -50,7 +51,7 @@ include "loguei.php";
 <?php 
 include "database.php";
 
-$sql = "SELECT * FROM ads_taisgs_saida_mp";
+$sql = "SELECT * FROM ads_taisgs_saida_mp ORDER BY data_saida DESC";
 
 $resultado = mysqli_query($conexao, $sql );
 
